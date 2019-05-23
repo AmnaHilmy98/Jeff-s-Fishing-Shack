@@ -48,8 +48,8 @@ public class EmailService {
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.ssl.trust", "*");
 
-        final String username = "amna.hilmy@gmail.com";
-        final String password = "(hApPy321)";
+        final String username = "";
+        final String password = "";
 
         Authenticator authenticator = new Authenticator() {
             private PasswordAuthentication pa = new PasswordAuthentication(username, password);
@@ -65,8 +65,8 @@ public class EmailService {
 
         MimeMessage message = new MimeMessage(session);
         try {
-            message.setFrom(new InternetAddress("amna.hilmy@gmail.com"));
-            InternetAddress[] address = {new InternetAddress("amna.hilmy@gmail.com")};
+            message.setFrom(new InternetAddress(""));
+            InternetAddress[] address = {new InternetAddress("")};
             message.setRecipients(Message.RecipientType.TO, address);
             message.setSubject("Invoice");
             message.setSentDate(new Date());
