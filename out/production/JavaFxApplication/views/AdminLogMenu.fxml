@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminLoginMenuController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+
+</AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: blue;">
+         <children>
+            <Button layoutX="175.0" layoutY="84.0" mnemonicParsing="false" onAction="#viewCustomersWindow" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: white;" text="View customers">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="175.0" layoutY="159.0" mnemonicParsing="false" onAction="#viewStaffWindow" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: white;" text="View Staff">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="488.0" layoutY="16.0" mnemonicParsing="false" onAction="#mainMenu" style="-fx-background-color: white;" text="Main Menu" textFill="BLUE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" />
+               </effect>
+            </Button>
+            <Button layoutX="175.0" layoutY="232.0" mnemonicParsing="false" onAction="#viewProductsWindow" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: white;" text="View products">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="175.0" layoutY="303.0" mnemonicParsing="false" onAction="#viewPurchasesWindow" prefHeight="35.0" prefWidth="250.0" style="-fx-background-color: white;" text="View purchases">
+               <font>
+                  <Font name="System Bold Italic" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
